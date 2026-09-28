@@ -1,0 +1,1157 @@
+/* ==========================================================================
+   CONCEPTEXIM — EXECUTIVE PRIVACY POLICY STYLES (privacy.css)
+   ========================================================================== */
+
+.privacy-page-wrapper {
+  background-color: #F8FAFC;
+  background-image: 
+    radial-gradient(circle at 12% 18%, rgba(214, 161, 58, 0.06) 0%, transparent 42%),
+    radial-gradient(circle at 88% 55%, rgba(29, 78, 216, 0.05) 0%, transparent 48%),
+    radial-gradient(circle at 50% 90%, rgba(214, 161, 58, 0.04) 0%, transparent 40%),
+    linear-gradient(180deg, #F8FAFC 0%, #F1F5F9 100%);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  color: #1E293B;
+  font-family: var(--font-sans);
+}
+
+/* --------------------------------------------------------------------------
+   1. CINEMATIC HERO SECTION
+   -------------------------------------------------------------------------- */
+.privacy-hero {
+  position: relative;
+  background: 
+    radial-gradient(circle at 85% 15%, rgba(214, 161, 58, 0.16) 0%, transparent 45%),
+    radial-gradient(circle at 15% 85%, rgba(29, 78, 216, 0.22) 0%, transparent 50%),
+    linear-gradient(135deg, #040A17 0%, #071A35 60%, #0B1B3D 100%);
+  color: #FFFFFF;
+  padding: 68px 0 56px;
+  border-bottom: 1px solid rgba(214, 161, 58, 0.3);
+  box-shadow: 0 20px 44px rgba(4, 10, 23, 0.42);
+  overflow: hidden;
+}
+
+.privacy-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(214, 161, 58, 0.7) 50%, transparent 100%);
+  pointer-events: none;
+}
+
+.privacy-hero-container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 24px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Breadcrumb Navigation */
+.privacy-breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #94A3B8;
+  margin-bottom: 18px;
+}
+
+.privacy-breadcrumb a {
+  color: #CBD5E1;
+  text-decoration: none;
+  transition: color 0.18s ease;
+}
+
+.privacy-breadcrumb a:hover {
+  color: #F8D98C;
+}
+
+.privacy-breadcrumb-sep {
+  color: #64748B;
+  font-size: 0.75rem;
+}
+
+.privacy-breadcrumb-current {
+  color: #D49A36;
+  font-weight: 600;
+}
+
+/* Hero Badge */
+.privacy-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.71875rem;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #F8D98C;
+  background: rgba(214, 161, 58, 0.14);
+  border: 1px solid rgba(214, 161, 58, 0.35);
+  padding: 4px 14px;
+  border-radius: 9999px;
+  margin-bottom: 16px;
+  width: fit-content;
+  box-shadow: 0 2px 10px rgba(214, 161, 58, 0.12);
+}
+
+/* Hero Titles */
+.privacy-hero-title {
+  font-family: var(--font-sans);
+  font-size: clamp(2.2rem, 3.4vw, 3.2rem);
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 1.14;
+  letter-spacing: -0.03em;
+  margin: 0 0 14px;
+}
+
+.privacy-hero-subtitle {
+  font-size: clamp(0.9375rem, 1.1vw, 1.0625rem);
+  line-height: 1.65;
+  color: #CBD5E1;
+  max-width: 740px;
+  margin: 0 0 26px;
+}
+
+/* Document Meta Strip */
+.privacy-meta-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 26px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 0.8125rem;
+  color: #94A3B8;
+}
+
+.privacy-meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.privacy-meta-icon {
+  color: #D49A36;
+}
+
+.privacy-meta-strong {
+  color: #FFFFFF;
+  font-weight: 600;
+}
+
+.privacy-status-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(214, 161, 58, 0.16);
+  border: 1px solid rgba(214, 161, 58, 0.4);
+  color: #F8D98C;
+  padding: 3px 12px;
+  border-radius: 6px;
+  font-size: 0.71875rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* --------------------------------------------------------------------------
+   2. MAIN CONTENT LAYOUT (TWO-COLUMN ARCHITECTURE)
+   -------------------------------------------------------------------------- */
+.privacy-main-container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* --------------------------------------------------------------------------
+   2. MAIN CONTENT LAYOUT (TWO-COLUMN ARCHITECTURE)
+   -------------------------------------------------------------------------- */
+.privacy-main-container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.privacy-layout-grid {
+  display: grid;
+  grid-template-columns: 330px 1fr;
+  gap: 36px;
+  align-items: start;
+  padding: 38px 0 84px;
+}
+
+/* --------------------------------------------------------------------------
+   3. STICKY SIDEBAR NAVIGATION (ELEVATED TABLE OF CONTENTS)
+   -------------------------------------------------------------------------- */
+.privacy-sidebar {
+  position: sticky;
+  top: 92px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.privacy-toc-card {
+  background: #FFFFFF;
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 
+    0 10px 30px -10px rgba(11, 27, 61, 0.06),
+    0 0 0 1px rgba(11, 27, 61, 0.03);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.privacy-toc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #F1F5F9;
+}
+
+.privacy-toc-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.privacy-toc-title {
+  font-size: 0.8125rem;
+  font-weight: 750;
+  color: #0F172A;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.privacy-toc-sub {
+  font-size: 0.6875rem;
+  color: #94A3B8;
+  font-weight: 500;
+  padding-left: 21px;
+}
+
+.privacy-toc-badge {
+  font-size: 0.65625rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9B6A1E;
+  background: rgba(214, 161, 58, 0.12);
+  border: 1px solid rgba(214, 161, 58, 0.28);
+  padding: 2px 8px;
+  border-radius: 999px;
+}
+
+/* Sidebar Search Filter */
+.privacy-search-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.privacy-search-icon {
+  position: absolute;
+  left: 10px;
+  color: #94A3B8;
+  pointer-events: none;
+}
+
+.privacy-search-input {
+  width: 100%;
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  padding: 7px 28px 7px 30px;
+  font-size: 0.78125rem;
+  color: #0F172A;
+  font-family: inherit;
+  transition: all 0.18s ease;
+}
+
+.privacy-search-input:focus {
+  outline: none;
+  background: #FFFFFF;
+  border-color: #D49A36;
+  box-shadow: 0 0 0 3px rgba(212, 154, 54, 0.15);
+}
+
+.privacy-search-clear {
+  position: absolute;
+  right: 8px;
+  background: none;
+  border: none;
+  color: #94A3B8;
+  font-size: 1rem;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 4px;
+}
+
+.privacy-search-clear:hover {
+  color: #0F172A;
+}
+
+.privacy-toc-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  max-height: 380px;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.privacy-toc-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.privacy-toc-list::-webkit-scrollbar-thumb {
+  background: #E2E8F0;
+  border-radius: 999px;
+}
+
+.privacy-toc-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7.5px 10px;
+  border-radius: 8px;
+  color: #475569;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.16s ease;
+  border-left: 2.5px solid transparent;
+  position: relative;
+}
+
+.privacy-toc-text {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.privacy-toc-link:hover {
+  background: #F8FAFC;
+  color: #0B1B3D;
+  transform: translateX(2px);
+}
+
+.privacy-toc-link.active {
+  background: linear-gradient(90deg, rgba(212, 154, 54, 0.12) 0%, rgba(212, 154, 54, 0.02) 100%);
+  border-left-color: #D49A36;
+  color: #0B1B3D;
+  font-weight: 700;
+}
+
+.privacy-toc-link.active .privacy-toc-num {
+  background: #D49A36;
+  color: #FFFFFF;
+  box-shadow: 0 2px 6px rgba(212, 154, 54, 0.35);
+}
+
+.privacy-toc-num {
+  font-size: 0.6875rem;
+  font-weight: 750;
+  color: #64748B;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background: #F1F5F9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.18s ease;
+}
+
+.privacy-toc-active-indicator {
+  color: #D49A36;
+  display: flex;
+  align-items: center;
+  animation: slideIndicator 1s ease-in-out infinite alternate;
+}
+
+@keyframes slideIndicator {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(2px); }
+}
+
+.privacy-search-empty {
+  padding: 16px 8px;
+  text-align: center;
+  font-size: 0.78125rem;
+  color: #94A3B8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.privacy-search-reset-btn {
+  background: none;
+  border: 1px solid #E2E8F0;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #0B1B3D;
+  cursor: pointer;
+}
+
+.privacy-search-reset-btn:hover {
+  background: #F1F5F9;
+}
+
+.privacy-toc-footer-strip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.6875rem;
+  color: #94A3B8;
+  padding-top: 10px;
+  border-top: 1px solid #F1F5F9;
+}
+
+/* Sidebar Assistance Card (VIP Obsidian & Gold Concierge Card) */
+.privacy-sidebar-help-card {
+  background: 
+    radial-gradient(circle at 90% 10%, rgba(214, 161, 58, 0.2) 0%, transparent 45%),
+    linear-gradient(145deg, #071A35 0%, #030814 100%);
+  color: #FFFFFF;
+  border: 1px solid rgba(214, 161, 58, 0.35);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 
+    0 12px 32px rgba(4, 10, 23, 0.3),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.privacy-sidebar-help-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: rgba(214, 161, 58, 0.16);
+  border: 1px solid rgba(214, 161, 58, 0.35);
+  color: #F8D98C;
+  font-size: 0.65625rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.privacy-sidebar-help-title {
+  font-size: 0.9375rem;
+  font-weight: 750;
+  color: #FFFFFF;
+  margin: 0 0 6px;
+}
+
+.privacy-sidebar-help-desc {
+  font-size: 0.78125rem;
+  line-height: 1.55;
+  color: #CBD5E1;
+  margin: 0 0 16px;
+}
+
+.privacy-sidebar-help-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  background: linear-gradient(135deg, #ECC885 0%, #D49A36 50%, #B57F26 100%);
+  color: #040A17;
+  font-size: 0.78125rem;
+  font-weight: 750;
+  padding: 9px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 14px rgba(212, 154, 54, 0.3);
+}
+
+.privacy-sidebar-help-btn:hover {
+  background: linear-gradient(135deg, #F3D396 0%, #DEAA4B 50%, #C99131 100%);
+  color: #040A17;
+  transform: translateY(-1.5px);
+  box-shadow: 0 6px 18px rgba(212, 154, 54, 0.45);
+}
+
+/* --------------------------------------------------------------------------
+   4. CONTENT COLUMN & SEAMLESS PAGE READER CANVAS
+   -------------------------------------------------------------------------- */
+.privacy-content-col {
+  width: 100%;
+  min-width: 0;
+  height: calc(100vh - 120px);
+  min-height: 650px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scroll-behavior: smooth;
+  padding-right: 28px;
+  padding-bottom: 60px;
+  outline: none;
+  position: relative;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+/* Dedicated Clean Scrollbar on the Right */
+.privacy-content-col::-webkit-scrollbar {
+  width: 7px;
+}
+
+.privacy-content-col::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.privacy-content-col::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+  transition: background 0.2s ease;
+}
+
+.privacy-content-col::-webkit-scrollbar-thumb:hover {
+  background: #D49A36;
+}
+
+.privacy-content-col::-webkit-scrollbar-thumb:active {
+  background: #B88228;
+}
+
+.privacy-content-col {
+  scrollbar-width: thin;
+  scrollbar-color: #CBD5E1 transparent;
+}
+
+.privacy-bounce-arrow {
+  animation: privacyBounceDown 1.5s infinite;
+}
+
+@keyframes privacyBounceDown {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(3px); }
+}
+
+/* Executive Statutory Compliance Seal */
+.privacy-statutory-seal {
+  background: linear-gradient(135deg, #FCFAF7 0%, #F6F1E7 100%);
+  border: 1px solid rgba(214, 161, 58, 0.35);
+  border-radius: 14px;
+  padding: 20px 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 38px;
+  box-shadow: 0 4px 16px rgba(214, 161, 58, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.privacy-statutory-seal::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, #ECC885 0%, #D49A36 100%);
+}
+
+.privacy-seal-icon-box {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: #0B1B3D;
+  color: #F8D98C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 12px rgba(11, 27, 61, 0.2);
+}
+
+.privacy-seal-body {
+  flex: 1;
+}
+
+.privacy-seal-header-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  margin-bottom: 6px;
+}
+
+.privacy-seal-badge {
+  font-size: 0.6875rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #9B6A1E;
+}
+
+.privacy-seal-edition {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: #64748B;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.privacy-seal-title {
+  font-size: 0.96875rem;
+  font-weight: 750;
+  color: #0B1B3D;
+  margin: 0 0 6px;
+}
+
+.privacy-seal-desc {
+  font-size: 0.8125rem;
+  line-height: 1.62;
+  color: #475569;
+  margin: 0;
+}
+
+/* Sections */
+.privacy-section {
+  scroll-margin-top: 20px;
+  margin-bottom: 48px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #EEF2F6;
+  position: relative;
+}
+
+.privacy-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.privacy-section-header {
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.privacy-section-header::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: linear-gradient(90deg, #D49A36 0%, transparent 100%);
+  margin-top: 10px;
+}
+
+.privacy-section-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.6875rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #9B6A1E;
+  background: rgba(214, 161, 58, 0.12);
+  border: 1px solid rgba(214, 161, 58, 0.28);
+  padding: 3px 9px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.privacy-section-title {
+  font-size: clamp(1.4rem, 1.8vw, 1.75rem);
+  font-weight: 800;
+  color: #0B1B3D;
+  line-height: 1.22;
+  letter-spacing: -0.022em;
+  margin: 0;
+}
+
+.privacy-paragraph {
+  font-size: 0.9375rem;
+  line-height: 1.72;
+  color: #334155;
+  margin: 0 0 16px;
+}
+
+.privacy-paragraph:last-child {
+  margin-bottom: 0;
+}
+
+/* Callout Highlights */
+.privacy-callout-card {
+  background: linear-gradient(135deg, rgba(11, 27, 61, 0.03) 0%, rgba(214, 161, 58, 0.06) 100%);
+  border: 1px solid rgba(214, 161, 58, 0.26);
+  border-left: 4px solid #D49A36;
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin: 22px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.privacy-callout-card.security-variant {
+  background: 
+    radial-gradient(circle at 90% 10%, rgba(214, 161, 58, 0.18) 0%, transparent 45%),
+    linear-gradient(135deg, #071A35 0%, #0B1B3D 100%);
+  border: 1px solid rgba(214, 161, 58, 0.35);
+  border-left: 4px solid #F8D98C;
+  color: #FFFFFF;
+  box-shadow: 0 8px 24px rgba(4, 10, 23, 0.22);
+}
+
+.privacy-callout-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.privacy-callout-badge-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  background: rgba(214, 161, 58, 0.16);
+  border: 1px solid rgba(214, 161, 58, 0.35);
+  color: #9B6A1E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.privacy-callout-badge-icon.security-badge {
+  background: rgba(214, 161, 58, 0.2);
+  color: #F8D98C;
+}
+
+.privacy-callout-kicker {
+  display: block;
+  font-size: 0.6875rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9B6A1E;
+  margin-bottom: 2px;
+}
+
+.privacy-callout-card.security-variant .privacy-callout-kicker {
+  color: #F8D98C;
+}
+
+.privacy-callout-heading {
+  font-size: 0.90625rem;
+  font-weight: 750;
+  color: #0B1B3D;
+  margin: 0;
+}
+
+.privacy-callout-card.security-variant .privacy-callout-heading {
+  color: #FFFFFF;
+}
+
+.privacy-callout-body {
+  font-size: 0.875rem;
+  line-height: 1.64;
+  color: #334155;
+  margin: 0;
+}
+
+.privacy-callout-card.security-variant .privacy-callout-body {
+  color: #CBD5E1;
+}
+
+/* Structured Checkpoints */
+.privacy-check-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 16px;
+  margin: 20px 0;
+}
+
+.privacy-check-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.84375rem;
+  line-height: 1.55;
+  color: #334155;
+  background: #F8FAFC;
+  border: 1px solid #EDF2F6;
+  border-radius: 9px;
+  padding: 10px 14px;
+  transition: all 0.18s ease;
+}
+
+.privacy-check-item:hover {
+  background: #FFFFFF;
+  border-color: rgba(214, 161, 58, 0.35);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.privacy-check-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(214, 161, 58, 0.15);
+  border: 1px solid rgba(214, 161, 58, 0.35);
+  color: #9B6A1E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* Data Tables (Institutional Corporate Matrix) */
+.privacy-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  margin: 22px 0;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
+}
+
+.privacy-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.84375rem;
+}
+
+.privacy-table th {
+  background: #0B1B3D;
+  color: #FFFFFF;
+  font-weight: 700;
+  padding: 13px 18px;
+  font-size: 0.78125rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-bottom: 2px solid #D49A36;
+}
+
+.privacy-table td {
+  padding: 13px 18px;
+  border-bottom: 1px solid #F1F5F9;
+  color: #334155;
+  vertical-align: top;
+  line-height: 1.55;
+}
+
+.privacy-table tr:hover td {
+  background: rgba(214, 161, 58, 0.03);
+}
+
+.privacy-table tr:last-child td {
+  border-bottom: none;
+}
+
+.privacy-table-tag {
+  display: inline-block;
+  font-size: 0.71875rem;
+  font-weight: 700;
+  background: rgba(214, 161, 58, 0.14);
+  border: 1px solid rgba(214, 161, 58, 0.3);
+  color: #9B6A1E;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+/* --------------------------------------------------------------------------
+   4. CONTACT DETAILS BOX & PREMIUM COLORED CARDS
+   -------------------------------------------------------------------------- */
+.privacy-contact-box {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 28px;
+  margin-top: 24px;
+  box-shadow: 0 4px 20px rgba(11, 27, 61, 0.04);
+}
+
+.privacy-contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.privacy-contact-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 16px 18px;
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Micro-accent top indicator on card hover */
+.privacy-contact-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.privacy-contact-card.card-address::before {
+  background: linear-gradient(90deg, #3B82F6 0%, #1D4ED8 100%);
+}
+
+.privacy-contact-card.card-email::before {
+  background: linear-gradient(90deg, #F59E0B 0%, #D97706 100%);
+}
+
+.privacy-contact-card.card-phone::before {
+  background: linear-gradient(90deg, #10B981 0%, #059669 100%);
+}
+
+.privacy-contact-card.card-hours::before {
+  background: linear-gradient(90deg, #8B5CF6 0%, #6D28D9 100%);
+}
+
+.privacy-contact-card:hover::before {
+  opacity: 1;
+}
+
+/* Interactive Card Elevations & Ambient Colored Shadows */
+.privacy-contact-card:hover {
+  background: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.privacy-contact-card.card-address:hover {
+  border-color: rgba(37, 99, 235, 0.4);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.1);
+}
+
+.privacy-contact-card.card-email:hover {
+  border-color: rgba(217, 119, 6, 0.4);
+  box-shadow: 0 8px 24px rgba(217, 119, 6, 0.1);
+}
+
+.privacy-contact-card.card-phone:hover {
+  border-color: rgba(16, 185, 129, 0.4);
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.1);
+}
+
+.privacy-contact-card.card-hours:hover {
+  border-color: rgba(139, 92, 246, 0.4);
+  box-shadow: 0 8px 24px rgba(139, 92, 246, 0.1);
+}
+
+/* Base Icon Badge Container */
+.privacy-contact-card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
+}
+
+.privacy-contact-card:hover .privacy-contact-card-icon {
+  transform: scale(1.08);
+}
+
+/* 1. Corporate Address: Sapphire Blue Gradient */
+.privacy-contact-card-icon.icon-address {
+  background: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%);
+  color: #FFFFFF;
+  box-shadow: 0 6px 16px rgba(37, 99, 235, 0.32);
+}
+
+/* 2. Privacy Email: Radiant Amber-Gold Gradient */
+.privacy-contact-card-icon.icon-email {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+  color: #FFFFFF;
+  box-shadow: 0 6px 16px rgba(217, 119, 6, 0.32);
+}
+
+/* 3. Commercial Telephone: Vivid Emerald-Mint Gradient */
+.privacy-contact-card-icon.icon-phone {
+  background: linear-gradient(135deg, #10B981 0%, #059669 100%);
+  color: #FFFFFF;
+  box-shadow: 0 6px 16px rgba(16, 185, 129, 0.32);
+}
+
+/* 4. Operating Hours: Regal Violet Gradient */
+.privacy-contact-card-icon.icon-hours {
+  background: linear-gradient(135deg, #8B5CF6 0%, #6D28D9 100%);
+  color: #FFFFFF;
+  box-shadow: 0 6px 16px rgba(139, 92, 246, 0.32);
+}
+
+/* Typography Inside Contact Cards */
+.privacy-contact-card-label {
+  font-size: 0.6875rem;
+  font-weight: 750;
+  text-transform: uppercase;
+  color: #64748B;
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
+
+.privacy-contact-card-val {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #0F172A;
+  line-height: 1.45;
+}
+
+.privacy-contact-card-val a {
+  color: #0B1B3D;
+  text-decoration: none;
+  font-weight: 650;
+  transition: color 0.15s ease;
+}
+
+.privacy-contact-card.card-email .privacy-contact-card-val a:hover {
+  color: #D97706;
+}
+
+.privacy-contact-card.card-phone .privacy-contact-card-val a:hover {
+  color: #059669;
+}
+
+/* --------------------------------------------------------------------------
+   5. BACK TO TOP FLOATING BUTTON
+   -------------------------------------------------------------------------- */
+.privacy-float-top {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #0B1B3D;
+  color: #FFFFFF;
+  border: 1px solid rgba(214, 161, 58, 0.4);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 99;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+}
+
+.privacy-float-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.privacy-float-top:hover {
+  background: #D49A36;
+  color: #040A17;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(212, 154, 54, 0.45);
+}
+
+/* --------------------------------------------------------------------------
+   6. RESPONSIVE BREAKPOINTS
+   -------------------------------------------------------------------------- */
+@media (max-width: 1080px) {
+  .privacy-layout-grid {
+    grid-template-columns: 290px 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 900px) {
+  .privacy-layout-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 28px 0 60px;
+  }
+
+  .privacy-sidebar {
+    position: relative;
+    top: 0;
+  }
+
+  .privacy-content-col {
+    height: 70vh;
+    min-height: 480px;
+    padding-right: 14px;
+  }
+
+  .privacy-toc-card {
+    padding: 16px;
+  }
+
+  .privacy-toc-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6px;
+  }
+
+  .privacy-check-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .privacy-contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .privacy-hero {
+    padding: 44px 0 36px;
+  }
+
+  .privacy-toc-list {
+    grid-template-columns: 1fr;
+  }
+
+  .privacy-content-col {
+    height: 65vh;
+    min-height: 400px;
+    padding-right: 8px;
+  }
+
+  .privacy-meta-strip {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}

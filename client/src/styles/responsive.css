@@ -1,0 +1,150 @@
+/* ==========================================================================
+   ConceptExim — GLOBAL RESPONSIVE SYSTEM & MEDIA QUERIES
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Global Layout & Overflow Safeguards
+   -------------------------------------------------------------------------- */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Viewports: Large Desktop & Desktop (1200px - 1440px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1280px) {
+  :root {
+    --header-height: 84px;
+    --container-pad-x: 24px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .admin-kpi-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .admin-quick-actions-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Viewports: Tablet (769px - 1024px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  :root {
+    --header-height: 76px;
+    --section-pad-y: 64px;
+    --container-pad-x: 20px;
+  }
+
+  .admin-analytics-grid {
+    grid-template-columns: 1fr;
+  }
+  .admin-tables-grid {
+    grid-template-columns: 1fr;
+  }
+  .admin-sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
+    box-shadow: var(--shadow-xl);
+  }
+  .admin-sidebar.open {
+    transform: translateX(0);
+  }
+  .admin-sidebar-backdrop {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(6, 16, 36, 0.5);
+    z-index: 45;
+  }
+
+  /* Responsive Grid Helpers */
+  .grid-4col {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  .grid-3col {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Viewports: Mobile Landscape & Portrait (481px - 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 70px;
+    --section-pad-y: 48px;
+    --container-pad-x: 16px;
+  }
+
+  .admin-kpi-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .admin-quick-actions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .admin-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .admin-search-box {
+    width: 200px;
+  }
+
+  .section-header {
+    margin-bottom: 32px;
+  }
+
+  .grid-4col,
+  .grid-3col,
+  .grid-2col {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Touch-friendly buttons on mobile */
+  .btn {
+    padding: 10px 18px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Viewports: Small Mobile (< 480px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  :root {
+    --header-height: 64px;
+    --section-pad-y: 40px;
+    --container-pad-x: 14px;
+  }
+
+  .admin-kpi-grid {
+    grid-template-columns: 1fr;
+  }
+  .admin-header {
+    padding: 0 16px;
+  }
+  .admin-content {
+    padding: 16px;
+  }
+
+  /* Modals on small mobile */
+  .modal-container {
+    max-width: 95vw;
+    border-radius: var(--radius-lg);
+  }
+
+  .modal-body {
+    padding: 16px;
+  }
+
+  .modal-header,
+  .modal-footer {
+    padding: 14px 16px;
+  }
+}

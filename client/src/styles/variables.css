@@ -1,0 +1,200 @@
+/* Custom Ampersand: Use clean, professional Roman ampersand instead of decorative script glyphs */
+@font-face {
+  font-family: 'CorporateRomanAmpersand';
+  src: local('Times New Roman'), local('Times'), local('Georgia');
+  unicode-range: U+0026;
+}
+
+:root {
+  /* ==========================================================================
+     BRAND IDENTITY — DEEP NAVY & ROYAL BLUE
+     ========================================================================== */
+  --color-navy-midnight: #040A17;
+  --color-navy-dark: #061024;
+  --color-navy-primary: #0B1B3D;
+  --color-navy-surface: #0E2248;
+  --color-navy-light: #132752;
+  --color-navy-subtle: #1C3364;
+
+  --color-royal-accent: #1D4ED8;
+  --color-royal-vibrant: #2563EB;
+  --color-royal-hover: #1E40AF;
+  --color-royal-light: #EFF6FF;
+  --color-royal-glow: rgba(37, 99, 235, 0.18);
+
+  /* ==========================================================================
+     BRAND IDENTITY — CHAMPAGNE & GOLD ACCENTS
+     ========================================================================== */
+  --color-gold-deep: #9B6A1E;
+  --color-gold-primary: #D49A36;
+  --color-gold-hover: #C28929;
+  --color-gold-light: #FBF5EC;
+  --color-gold-shimmer: #F5E6CC;
+  --color-gold-border: rgba(212, 154, 54, 0.28);
+  --color-gold-border-subtle: rgba(212, 154, 54, 0.16);
+  --color-gold-glow: rgba(212, 154, 54, 0.25);
+  --color-gold-glow-strong: rgba(212, 154, 54, 0.42);
+
+  /* Metallic & Luxury Gradients */
+  --gradient-gold-metallic: linear-gradient(135deg, #ECC885 0%, #D49A36 50%, #B57F26 100%);
+  --gradient-gold-hover: linear-gradient(135deg, #F3D396 0%, #DEAA4B 50%, #C99131 100%);
+  --gradient-gold-subtle: linear-gradient(135deg, rgba(212, 154, 54, 0.08) 0%, rgba(212, 154, 54, 0.02) 100%);
+  --gradient-navy-hero: linear-gradient(145deg, #040A17 0%, #0B1B3D 55%, #132752 100%);
+  --gradient-navy-card: linear-gradient(135deg, rgba(11, 27, 61, 0.96) 0%, rgba(6, 16, 36, 0.98) 100%);
+  --gradient-navy-surface: linear-gradient(180deg, #0B1B3D 0%, #061024 100%);
+  --gradient-ivory-page: linear-gradient(180deg, #FFFFFF 0%, #F9FBFD 50%, #F4F6F9 100%);
+
+  /* ==========================================================================
+     BACKGROUNDS & NEUTRALS
+     ========================================================================== */
+  --color-bg-page: #F8FAFC;
+  --color-bg-ivory: #FCFAF7;
+  --color-bg-surface: #FFFFFF;
+  --color-bg-subtle: #F1F5F9;
+  --color-bg-elevated: #FFFFFF;
+
+  --color-border-subtle: #E2E8F0;
+  --color-border-strong: #CBD5E1;
+  --color-border-glass: rgba(226, 232, 240, 0.85);
+
+  /* ==========================================================================
+     GLASSMORPHISM TOKENS
+     ========================================================================== */
+  --glass-bg-light: rgba(255, 255, 255, 0.82);
+  --glass-bg-card: rgba(255, 255, 255, 0.88);
+  --glass-bg-card-hover: rgba(255, 255, 255, 0.96);
+  --glass-bg-dark: rgba(6, 16, 36, 0.84);
+  --glass-bg-dark-card: rgba(11, 27, 61, 0.76);
+  --glass-bg-accent: rgba(212, 154, 54, 0.07);
+
+  --glass-border-light: 1px solid rgba(255, 255, 255, 0.75);
+  --glass-border-subtle: 1px solid rgba(226, 232, 240, 0.7);
+  --glass-border-gold: 1px solid rgba(212, 154, 54, 0.28);
+  --glass-border-dark: 1px solid rgba(255, 255, 255, 0.08);
+
+  --glass-specular-light: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  --glass-specular-dark: inset 0 1px 0 rgba(212, 154, 54, 0.25);
+
+  --glass-blur-sm: blur(8px);
+  --glass-blur-md: blur(16px);
+  --glass-blur-lg: blur(24px);
+
+  /* ==========================================================================
+     TYPOGRAPHY COLORS & FAMILIES
+     ========================================================================== */
+  --color-text-main: #0F172A;
+  --color-text-muted: #475569;
+  --color-text-subtle: #94A3B8;
+  --color-text-inverse: #FFFFFF;
+  --color-text-inverse-muted: #CBD5E1;
+  --color-text-gold: #D49A36;
+
+  --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-serif: 'CorporateRomanAmpersand', 'Playfair Display', 'Times New Roman', Georgia, serif;
+
+  /* Typography Scale */
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.8125rem;  /* 13px */
+  --font-size-base: 0.875rem; /* 14px */
+  --font-size-md: 0.9375rem;  /* 15px */
+  --font-size-lg: 1rem;       /* 16px */
+  --font-size-xl: 1.125rem;   /* 18px */
+  --font-size-2xl: 1.25rem;   /* 20px */
+  --font-size-3xl: 1.5rem;    /* 24px */
+  --font-size-4xl: 1.875rem;  /* 30px */
+  --font-size-5xl: 2.25rem;   /* 36px */
+  --font-size-6xl: 3rem;      /* 48px */
+
+  /* Letter Spacing */
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0em;
+  --tracking-wide: 0.03em;
+  --tracking-wider: 0.08em;
+  --tracking-widest: 0.14em;
+
+  /* Line Heights */
+  --leading-none: 1;
+  --leading-tight: 1.2;
+  --leading-snug: 1.35;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.65;
+
+  /* ==========================================================================
+     STATUS COLORS
+     ========================================================================== */
+  --status-new-bg: #EFF6FF;
+  --status-new-text: #1D4ED8;
+  --status-new-border: #BFDBFE;
+
+  --status-progress-bg: #FFFBEB;
+  --status-progress-text: #B45309;
+  --status-progress-border: #FDE68A;
+
+  --status-quoted-bg: #F5F3FF;
+  --status-quoted-text: #6D28D9;
+  --status-quoted-border: #DDD6FE;
+
+  --status-success-bg: #ECFDF5;
+  --status-success-text: #047857;
+  --status-success-border: #A7F3D0;
+
+  --status-danger-bg: #FEF2F2;
+  --status-danger-text: #B91C1C;
+  --status-danger-border: #FECACA;
+
+  /* ==========================================================================
+     ELEVATIONS & SHADOWS
+     ========================================================================== */
+  --shadow-sm: 0 1px 3px rgba(11, 27, 61, 0.05);
+  --shadow-md: 0 4px 14px rgba(11, 27, 61, 0.07);
+  --shadow-lg: 0 10px 25px -4px rgba(11, 27, 61, 0.11), 0 4px 10px rgba(11, 27, 61, 0.03);
+  --shadow-xl: 0 20px 40px -8px rgba(11, 27, 61, 0.16), 0 8px 16px rgba(11, 27, 61, 0.04);
+  --shadow-2xl: 0 25px 60px -12px rgba(11, 27, 61, 0.25);
+  --shadow-gold: 0 8px 25px rgba(212, 154, 54, 0.32);
+  --shadow-gold-hover: 0 12px 32px rgba(212, 154, 54, 0.45);
+  --shadow-glass: 0 8px 32px 0 rgba(11, 27, 61, 0.08);
+
+  /* ==========================================================================
+     RADII
+     ========================================================================== */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 20px;
+  --radius-full: 9999px;
+
+  /* ==========================================================================
+     LAYOUT & SPACING SCALE
+     ========================================================================== */
+  --max-width-site: 1360px;
+  --header-height: 88px;
+  --topbar-height: 38px;
+  --sidebar-width: 260px;
+  --sidebar-collapsed-width: 72px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  --section-pad-y: clamp(48px, 6vw, 96px);
+  --container-pad-x: clamp(16px, 4vw, 32px);
+
+  /* ==========================================================================
+     TRANSITIONS & MICRO-INTERACTIONS
+     ========================================================================== */
+  --transition-fast: 160ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-normal: 260ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-smooth: 350ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-bounce: 400ms cubic-bezier(0.34, 1.56, 0.64, 1);
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "usr-admin-01",
+    "email": "admin@ionindustries.com",
+    "password": "Admin@2026",
+    "role": "admin",
+    "fullName": "Administrator (Demo Account)",
+    "companyName": "ION INDUSTRIES",
+    "phone": "+91 98765 43210",
+    "country": "India",
+    "city": "Visakhapatnam",
+    "businessType": "Head Office Operations",
+    "createdAt": "2026-08-01T00:00:00.000Z",
+    "isDemo": true
+  },
+  {
+    "id": "usr-buyer-01",
+    "email": "buyer@globalfoods.com",
+    "password": "Buyer@2026",
+    "role": "customer",
+    "fullName": "Ahmed Khan (Demo Buyer)",
+    "companyName": "Global Foods Ltd",
+    "phone": "+971 50 123 4567",
+    "country": "United Arab Emirates",
+    "city": "Dubai",
+    "businessType": "Wholesale Distributor",
+    "createdAt": "2026-08-15T00:00:00.000Z",
+    "isDemo": true
+  },
+  {
+    "id": "usr-supplier-01",
+    "email": "supplier@agritrade.com",
+    "password": "Supplier@2026",
+    "role": "customer",
+    "fullName": "Rajesh Sharma (Demo Supplier)",
+    "companyName": "AgriTrade Sourcing Co.",
+    "phone": "+91 94567 89012",
+    "country": "India",
+    "city": "Ahmedabad",
+    "businessType": "Agricultural Commodity Supplier",
+    "createdAt": "2026-08-20T00:00:00.000Z",
+    "isDemo": true
+  }
+]

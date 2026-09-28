@@ -1,0 +1,67 @@
+[
+  {
+    "id": "ord-2001",
+    "orderNumber": "ORD-2001",
+    "customer": "Global Foods Ltd",
+    "product": "Basmati Rice",
+    "quantity": "20 Tons",
+    "destination": "UAE",
+    "incoterms": "FOB / CIF",
+    "date": "05 Sep 2026",
+    "status": "Processing",
+    "notes": "Sample order record from PPT Slide 12",
+    "isDemo": true
+  },
+  {
+    "id": "ord-2002",
+    "orderNumber": "ORD-2002",
+    "customer": "Sunrise Imports",
+    "product": "Spices Mix",
+    "quantity": "5 Tons",
+    "destination": "South Africa",
+    "incoterms": "FOB / CIF",
+    "date": "03 Sep 2026",
+    "status": "Confirmed",
+    "notes": "Sample order record from PPT Slide 12",
+    "isDemo": true
+  },
+  {
+    "id": "ord-2003",
+    "orderNumber": "ORD-2003",
+    "customer": "Oceanic Traders",
+    "product": "Turmeric",
+    "quantity": "10 Tons",
+    "destination": "Netherlands",
+    "incoterms": "FOB / CIF",
+    "date": "02 Sep 2026",
+    "status": "Shipped",
+    "notes": "Sample order record from PPT Slide 12",
+    "isDemo": true
+  },
+  {
+    "id": "ord-2004",
+    "orderNumber": "ORD-2004",
+    "customer": "FreshMart LLC",
+    "product": "Pulses",
+    "quantity": "15 Tons",
+    "destination": "USA",
+    "incoterms": "FOB / CIF",
+    "date": "01 Sep 2026",
+    "status": "Confirmed",
+    "notes": "Sample order record from PPT Slide 12",
+    "isDemo": true
+  },
+  {
+    "id": "ord-2005",
+    "orderNumber": "ORD-2005",
+    "customer": "EuroAsia GmbH",
+    "product": "Dry Fruits",
+    "quantity": "8 Tons",
+    "destination": "Germany",
+    "incoterms": "FOB / CIF",
+    "date": "31 Aug 2026",
+    "status": "Delivered",
+    "notes": "Sample order record from PPT Slide 12",
+    "isDemo": true
+  }
+]
