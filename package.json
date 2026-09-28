@@ -1,0 +1,14 @@
+{
+  "name": "conceptexim-platform",
+  "version": "1.0.0",
+  "description": "ConceptExim — Global Import & Export Platform",
+  "private": true,
+  "scripts": {
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "dev": "npx -y concurrently \"npm run server\" \"npm run client\"",
+    "build:client": "npm --prefix client run build",
+    "build:server": "npm --prefix server run build",
+    "build": "npm run build:server && npm run build:client"
+  }
+}

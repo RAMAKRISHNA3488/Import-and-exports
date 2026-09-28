@@ -1,0 +1,15 @@
+@import './styles/variables.css';
+@import './styles/reset.css';
+@import './styles/components.css';
+@import './styles/admin.css';
+@import './styles/responsive.css';
+@import './styles/home.css';
+@import './styles/global-presence.css';
+@import './styles/navbar.css';
+@import './styles/quality.css';
+@import './styles/about.css';
+@import './styles/footer.css';
+@import './styles/services.css';
+@import './styles/services-detail.css';
+@import './styles/privacy.css';
+@import './styles/terms.css';

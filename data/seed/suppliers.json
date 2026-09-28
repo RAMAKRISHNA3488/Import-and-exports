@@ -1,0 +1,50 @@
+[
+  {
+    "id": "sup-demo-001",
+    "name": "[Sample Supplier 1] Grain & Rice Mill (Demo)",
+    "country": "India (Demo)",
+    "city": "Sample Region",
+    "categories": ["Rice & Grains"],
+    "commodities": ["Basmati Rice", "Brown Rice"],
+    "rating": 4.9,
+    "status": "Verified (Demo Entry)",
+    "contactPerson": "Demo Contact Person",
+    "email": "demo-supplier1@example.com",
+    "phone": "+91 00000 00001",
+    "annualCapacity": "Sample Volume",
+    "certifications": ["Demo Standard Reference"],
+    "isDemo": true
+  },
+  {
+    "id": "sup-demo-002",
+    "name": "[Sample Supplier 2] Spice Processing Partner (Demo)",
+    "country": "India (Demo)",
+    "city": "Sample Region",
+    "categories": ["Spices"],
+    "commodities": ["Black Pepper", "Turmeric"],
+    "rating": 4.8,
+    "status": "Verified (Demo Entry)",
+    "contactPerson": "Demo Contact Person",
+    "email": "demo-supplier2@example.com",
+    "phone": "+91 00000 00002",
+    "annualCapacity": "Sample Volume",
+    "certifications": ["Demo Standard Reference"],
+    "isDemo": true
+  },
+  {
+    "id": "sup-demo-003",
+    "name": "[Sample Supplier 3] Organic Agriculture Partner (Demo)",
+    "country": "Peru (Demo)",
+    "city": "Sample Region",
+    "categories": ["Rice & Grains"],
+    "commodities": ["Quinoa"],
+    "rating": 4.9,
+    "status": "Verified (Demo Entry)",
+    "contactPerson": "Demo Contact Person",
+    "email": "demo-supplier3@example.com",
+    "phone": "+51 00000 00003",
+    "annualCapacity": "Sample Volume",
+    "certifications": ["Demo Standard Reference"],
+    "isDemo": true
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "cat-rice-grains",
+    "name": "Rice & Grains",
+    "slug": "rice-and-grains",
+    "description": "Premium quality rice, grains and cereals sourced from trusted farmers and suppliers.",
+    "icon": "Wheat",
+    "image": "/assets/categories/rice-grains.jpg",
+    "productCount": 8
+  },
+  {
+    "id": "cat-spices",
+    "name": "Spices",
+    "slug": "spices",
+    "description": "Authentic spices sourced from trusted growers, delivering purity, flavour and quality.",
+    "icon": "Flame",
+    "image": "/assets/categories/spices.jpg",
+    "productCount": 8
+  },
+  {
+    "id": "cat-pulses-legumes",
+    "name": "Pulses & Legumes",
+    "slug": "pulses-and-legumes",
+    "description": "High-protein pulses, lentils, beans and chickpeas processed under strict quality standards.",
+    "icon": "CircleDot",
+    "image": "/assets/categories/pulses.jpg",
+    "productCount": 4
+  },
+  {
+    "id": "cat-fruits-vegetables",
+    "name": "Fruits & Vegetables",
+    "slug": "fruits-and-vegetables",
+    "description": "Fresh and cold-chain preserved fruits and vegetables meeting global export grades.",
+    "icon": "Apple",
+    "image": "/assets/categories/fruits-veg.jpg",
+    "productCount": 4
+  },
+  {
+    "id": "cat-processed-food",
+    "name": "Processed Food Products",
+    "slug": "processed-food-products",
+    "description": "Canned, preserved, and value-added culinary products packaged for international markets.",
+    "icon": "Package",
+    "image": "/assets/categories/processed-food.jpg",
+    "productCount": 3
+  },
+  {
+    "id": "cat-edible-oils",
+    "name": "Edible Oils",
+    "slug": "edible-oils",
+    "description": "Refined and cold-pressed edible vegetable oils certified for commercial trade.",
+    "icon": "Droplet",
+    "image": "/assets/categories/edible-oils.jpg",
+    "productCount": 4
+  },
+  {
+    "id": "cat-dry-fruits-nuts",
+    "name": "Dry Fruits & Nuts",
+    "slug": "dry-fruits-and-nuts",
+    "description": "Grade-A almonds, cashews, walnuts, and raisins packaged for bulk export.",
+    "icon": "Nut",
+    "image": "/assets/categories/dry-fruits.jpg",
+    "productCount": 4
+  },
+  {
+    "id": "cat-other-products",
+    "name": "Other Products",
+    "slug": "other-products",
+    "description": "Specialty agro-commodities, bio-fertilizers, and bulk commercial export raw materials.",
+    "icon": "Boxes",
+    "image": "/assets/categories/other-products.jpg",
+    "productCount": 1
+  }
+]
